@@ -12,11 +12,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // Валидация имени пользователя
   if (empty(trim($username))) {
     $username_err = "Пожалуйста, введите имя пользователя.";
+  } elseif (strpos($username, ' ') !== false) {
+    $username_err = "Имя пользователя не должно содержать пробелы.";
   }
 
   // Валидация пароля
   if (empty(trim($password))) {
     $password_err = "Пожалуйста, введите пароль.";
+  } elseif (strpos($password, ' ') !== false) {
+    $password_err = "Пароль не должен содержать пробелы.";
   }
 
   // Если нет ошибок валидации, проверяем учетные данные
