@@ -19,7 +19,8 @@ if (isset($_GET['search'])) {
     // Запрос продуктов из базы данных с поиском
     $sql = "SELECT p.*
              FROM products p
-             WHERE (p.name LIKE '%$search%' OR p.description LIKE '%$search%')";
+             WHERE (p.name LIKE '%$search%' OR p.description LIKE '%$search%')
+            ";
 } else {
     // Запрос продуктов из базы данных без поиска
     $sql = "SELECT p.*
@@ -50,10 +51,10 @@ foreach ($worker_ids as $product_id => $worker_id) {
     } else {
         // Если весов нет, используй дефолтные значения
         $weights[$product_id] = [
-            'price_weight' => 0.33,
-            'weight_weight' => 0.33,
-            'color_weight' => 0.33,
-            'history_weight' => 0.5,
+            'price_weight' => 0,
+            'weight_weight' => 0,
+            'color_weight' => 0,
+            'history_weight' => 0,
         ];
     }
 }
