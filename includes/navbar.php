@@ -7,7 +7,6 @@
             <?php if (isLoggedIn()): ?>
                 <?php if (isAdmin()): ?>
                     <li><a href="/warehouse/worker/">Панель управления</a></li>
-                    <li><a href="/warehouse/worker/weights.php">Настройка весов</a></li>
                 <?php else: ?>
                     <li><a href="/warehouse/user/">Продукты</a></li>
                     <li><a href="/warehouse/user/orders.php">Мои заказы</a></li>
