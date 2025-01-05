@@ -1,0 +1,70 @@
+/* Стили для страницы управления продуктами */
+.container {
+    max-width: 1200px; 
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .product-actions {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; 
+    transition: background-color 0.3s ease;
+    outline: none; 
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .danger-button { 
+    background-color: #dc3545; 
+    outline: none;
+  }
+  
+  .danger-button:hover {
+    background-color: #c82333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #333;
+  }
+  
+  .action-button { 
+    display: inline-block; 
+    padding: 5px 10px;
+    margin-right: 5px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+    outline: none; 
+  }
+  
+  .action-button:hover {
+    opacity: 0.8;
+  }

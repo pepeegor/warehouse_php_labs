@@ -1,0 +1,66 @@
+/* Стили для страницы настройки весов */
+.container {
+    max-width: 500px; 
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #282828;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .success-message {
+    background-color: #dff0d8; 
+    border: 1px solid #d0e9c6; 
+    color: #3c763d; 
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  
+  .error-message {
+    background-color: #fdd;
+    border: 1px solid #faa;
+    color: #a00;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  
+  .container div {
+    margin-bottom: 15px; 
+  }
+  
+  label {
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="number"] {
+    width: calc(100% - 22px); 
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #383838;
+    color: #eee;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; 
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }

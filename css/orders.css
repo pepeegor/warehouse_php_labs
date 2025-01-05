@@ -1,0 +1,38 @@
+/* Стили для страницы заказов */
+.orders {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-gap: 20px;
+  }
+  
+  .order-card {
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .order-status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .order-status.pending {
+    color: #ffc107; /* Желтый */
+  }
+  
+  .order-status.approved {
+    color: #28a745; /* Зеленый */
+  }
+  
+  .order-status.rejected {
+    color: #dc3545; /* Красный */
+  }

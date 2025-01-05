@@ -1,0 +1,75 @@
+/* Стили для страницы заявок */
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .requests-actions {
+    display: flex;
+    justify-content: flex-end; 
+    margin-bottom: 20px;
+  }
+  
+  .request-card {
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .requests-actions {
+    display: flex;
+    justify-content: flex-end; /* Выравнивание по правому краю */
+    margin-bottom: 20px;
+  }
+  
+  .requests-actions a { /* Стили для ссылок */
+    display: inline-block; 
+    background-color: #007bff; /* Цвет фона */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none; 
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* Отступ между ссылками */
+  }
+  
+  .requests-actions a:hover {
+    background-color: #0056b3;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    outline: none;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .success-button { 
+    background-color: #28a745; 
+  }
+  
+  .success-button:hover {
+    background-color: #218838; 
+  }
+  
+  .danger-button {
+    background-color: #dc3545;
+  }
+  
+  .danger-button:hover {
+    background-color: #c82333;
+  }

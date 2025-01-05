@@ -1,0 +1,53 @@
+/* Стили для страницы отклоненных заявок */
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .requests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    grid-gap: 20px;
+    border-top: 1px solid #555; /* Добавляем верхнюю границу */
+    padding-top: 20px; /* Добавляем отступ сверху */
+  }
+  
+  .request-card {
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #555; /* Добавляем границу вокруг карточки */
+  }
+  
+  .request-header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 10px; 
+  }
+  
+  .request-body {
+    margin-bottom: 15px; 
+  }
+  
+  .request-body p {
+    margin-bottom: 5px; 
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
