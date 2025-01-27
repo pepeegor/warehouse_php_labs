@@ -7,22 +7,24 @@ if (!isLoggedIn()) {
     exit;
 }
 
+$userId = $_SESSION['user_id'];
+
 // Обработка поиска
 if (isset($_GET['search'])) {
     $search = $_GET['search'];
 
-    // Запрос продуктов из базы данных с поиском
+    // Запрос продуктов из базы данных с учётом текущего пользователя и поиска
     $sql = "SELECT p.*, COUNT(r.id) AS request_count
             FROM products p
-            LEFT JOIN requests r ON p.id = r.product_id
+            LEFT JOIN requests r ON p.id = r.product_id AND r.user_id = $userId
             WHERE p.name LIKE '%$search%' OR p.description LIKE '%$search%' 
             GROUP BY p.id
             ORDER BY request_count DESC";
 } else {
-    // Запрос продуктов из базы данных без поиска
+    // Запрос продуктов из базы данных с учётом текущего пользователя без поиска
     $sql = "SELECT p.*, COUNT(r.id) AS request_count
             FROM products p
-            LEFT JOIN requests r ON p.id = r.product_id
+            LEFT JOIN requests r ON p.id = r.product_id AND r.user_id = $userId
             GROUP BY p.id
             ORDER BY request_count DESC";
 }
